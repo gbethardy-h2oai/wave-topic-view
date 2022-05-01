@@ -1,0 +1,60 @@
+[App]
+Name = "ai.h2o.wave.topic-view"
+Version = "0.0.50"
+Title = "Topic View"
+Description = "Visually explore topic and word distributions"
+LongDescription = "docs/description_for_topic_view.md"
+Category = ""
+Keywords = []
+
+[Runtime]
+Module = "src.app"
+EnableOIDC = true
+VolumeMount = "/mount-data"
+VolumeSize = "1Gi"
+ResourceVolumeSize = "1Gi"
+
+[[Env]]
+Name = "STEAM_URL"
+Secret = "cloud-steam-admin"
+SecretKey = "url"
+
+[[Env]]
+Name = "STEAM_TOKEN"
+Secret = "cloud-steam-admin"
+SecretKey = "token"
+
+[[Env]]
+Name = "DB_URL"
+Secret = "cloud-telemetry-db-credentials"
+SecretKey = "url"
+
+[[Env]]
+Name = "DB_USERNAME"
+Secret = "cloud-telemetry-db-credentials"
+SecretKey = "username"
+
+[[Env]]
+Name = "DB_PASSWORD"
+Secret = "cloud-telemetry-db-credentials"
+SecretKey = "password"
+
+[[Env]]
+Name = "DB_DATABASE"
+Secret = "cloud-telemetry-db-credentials"
+SecretKey = "database"
+
+[[Env]]
+Name = "OKTA_ORG_URL"
+Secret = "cloud-okta"
+SecretKey = "url"
+
+[[Env]]
+Name = "OKTA_TOKEN"
+Secret = "cloud-okta"
+SecretKey = "token"
+
+[[Env]]
+Name = "OKTA_CLIENT_ID"
+Secret = "cloud-okta"
+SecretKey = "client-id"
