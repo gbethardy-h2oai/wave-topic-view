@@ -1,0 +1,6 @@
+h2o_wave==0.21.0
+pandas
+numpy
+nltk
+gensim
+pyLDAvis

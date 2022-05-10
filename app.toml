@@ -1,0 +1,10 @@
+[App]
+Name = "ai.h2o.wave.topic-view"
+Version = "0.0.6"
+Title = "Topic View"
+Description = "Visually explore topic and word distributions"
+LongDescription = "docs/description_for_topic_view.md"
+Tags = ["NLP", "UNSUPERVISED_LEARNING"]
+
+[Runtime]
+Module = "src.app"
