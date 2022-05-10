@@ -71,17 +71,3 @@ Run your app for local development **after setting up the key information in Mak
 ```shell script
 make run
 ```
-
-## Run in the AI Cloud
-
-### App Secrets
-This application must be parameterized with the telemetry credentials, steam admin credentials, and okta credentials
-for the Trial Cloud to run in any H2O AI Cloud.
-
-```sh
-h2o secret create cloud-telemetry-db-credentials --from-literal=url="" --from-literal=username="" --from-literal=password="" --from-literal=database=""
-
-h2o secret create cloud-steam-admin --from-literal=url="" --from-literal=token=""
-
-h2o secret create cloud-okta --from-literal=url="" --from-literal=token="" --from-literal=client-id=""
-```
